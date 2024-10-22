@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropSense</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="leftside">
+          <img src="{{ url_for('static', filename='leaf.png') }}" alt="LogoNotFound">
+          <h1 class="name">CropSense</h1>
+        </div>
+        <div class="profile-picture-container">
+            <img src="{{ user['picture'] }}" alt="Profile picture">
+        </div>
+      </div>
+      {% if user %}
+        <div class="main">
+          <img src="{{ url_for('static', filename='logo.jpg') }}" alt="ImageNotFound">
+          <p>Hello, {{ user['name'] }}!</p>
+          <p class="tagline">Harness AI and Data to Empower Communities, Farmers, and Individuals</p>
+          <a href="globe">
+            <button class="start">GET STARTED</button></div>
+          </a>
+        </div>
+      {% endif %}
+</body>
+</html>
