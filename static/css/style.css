@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+}
+
+.header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .rightside {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.header .leftside {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header .name {
+    color: rgba(37, 150, 85, 255);
+}
+
+.main {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.header img {
+    height: 80px;
+    padding-right: 10px;
+}
+
+.main p {
+    font-family: sans-serif;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main img {
+    width: 20%;
+    margin: 10px auto;
+}
+
+.profile-picture-container {
+    width: 40px; /* Smaller width */
+    height: 40px; /* Smaller height */
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden; /* Hides overflow */
+    position: fixed; /* Fixes position to the top-right */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+}
+
+.profile-picture-container img {
+    width: 100%; /* Fills the container */
+    height: 100%; /* Forces the image to cover the container */
+    object-fit: cover; /* Maintains aspect ratio */
+}
+.main .tagline{
+    margin-top: 5px;
+    /* color: #0b890b; */
+    font-weight: 800;
+    font-size: 18px;
+    font-style: italic;
+}
+.start{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(37, 150, 85, 255);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10%;
+}
+.start:hover{
+    cursor: pointer;
+    transition-duration: 3s;
+    background-color: #039e27;
+}
