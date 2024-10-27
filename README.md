@@ -44,3 +44,20 @@ then run it in the terminal
 ```bash
 python ndvi_streamer.py
 ```
+
+# How to connect gke to redpanda 
+
+first install minikube 
+
+Then using gcolud cli paste in the terminal 
+```bash
+gcloud container clusters get-credentials redpanda-cluster --zone us-central1-c
+
+```
+Verify the Connection: Check if your kubectl is correctly configured to work with the GKE cluster by listing the nodes:
+
+```bash
+kubectl get nodes
+
+```
+
