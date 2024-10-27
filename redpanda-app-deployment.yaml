@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redpanda-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redpanda-app
+  template:
+    metadata:
+      labels:
+        app: redpanda-app
+    spec:
+      containers:
+      - name: redpanda-app-container
+        image: ghostbyte118/redpanda-app
+        ports:
+        - containerPort: 9092
