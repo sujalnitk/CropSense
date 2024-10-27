@@ -33,9 +33,13 @@ python main.py
 
 # For Testing ndvi and connecting to redpanda for streaming
 
+first create a redpanda topic make sure you have installed redpanda cli
+
 ```bash
 rpk topic create ndvi-values
 ```
+
+then run it in the terminal 
 
 ```bash
 python ndvi_streamer.py
