@@ -30,3 +30,13 @@ Finally, run your python - flask application
 ```bash
 python main.py
 ```
+
+# For Testing ndvi and connecting to redpanda for streaming
+
+```bash
+rpk topic create ndvi-values
+```
+
+```bash
+python ndvi_streamer.py
+```
